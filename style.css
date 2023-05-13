@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+}
+
+body{
+    margin: 50px auto;
+    width: 50%;
+    height: 100vh;
+    background-color: hsl(218, 22%, 67%);
+    
+    border-radius: 10px;
+    box-shadow: 0px 1px 5px 1px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 1px 5px 1px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 1px 5px 1px rgba(0,0,0,0.75);
+}
+
+.top{
+    border-radius: 10px 10px 0 0;
+    background-color: white;
+    padding: 1.1rem;
+    height: 40%;
+}
+
+.top h2{
+    color: hsl(179, 62%, 43%);
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.top h4{
+color: hsl(71, 73%, 54%);
+font-weight: 600;
+margin-bottom: 1.5rem;
+font-size: 10px;
+}
+
+.top p{
+    color:  hsl(218, 22%, 67%);
+    font-size: 8px;
+}
+
+.bottom{
+    /* padding: 1.5rem; */
+    display: flex;
+    flex-direction: column;
+    height: 60%;
+}
+.subscribe{
+    background-color: hsl(179, 62%, 43%);
+    height: 40%;
+    padding: 0 1.1rem ;
+    color: white;
+}
+.subscribe h4{
+    margin-top: 0.7rem;
+    font-size: 11px;
+}
+.subscribe p{
+    margin-top: 0.7rem;
+    font-size: 10px;
+    font-weight: 200;
+    color: hsl(204, 43%, 93%);
+    margin-bottom: 0.7rem;
+}
+.price{
+    display: flex;
+    margin-top: 0.7rem;
+}
+
+.price h2{
+    font-size: 18px; 
+}
+.price h5{
+    margin-left: 1.5rem;
+    margin-top: 0.4rem;
+    color: hsl(204, 43%, 93%);
+    font-size: 10px;
+}
+
+button{
+    cursor: pointer;
+    text-align: center;
+    height: 1.5rem;
+    width: 90%;
+    background-color: hsl(71, 73%, 54%);
+    color: white;
+    font-weight: 700;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0px 1px 5px 1px rgba(253,255,255,0.75);
+    -webkit-box-shadow: 0px 1px 5px 1px rgba(253,255,255,0.75);
+    -moz-box-shadow: 0px 1px 5px 1px rgba(253,255,255,0.75);
+}
+button:hover{
+color: hsl(71, 73%, 54%);
+background-color: white;
+box-shadow: 0px 1px 5px 1px rgba(192,223,52,0.75);
+-webkit-box-shadow: 0px 1px 5px 1px rgba(192,223,52,0.75);
+-moz-box-shadow: 0px 1px 5px 1px rgba(192,223,52,0.75);
+}
+.whyus{
+    background-color: hsl(179, 47%, 49%);
+    border-radius: 0 0 10px 10px;
+    height: 60%;
+    padding: 0 1.1rem ;
+}
+.whyus h3{
+    margin-top: 0.7rem;
+    color: white;
+    font-size: 14px;
+}
+li{
+    margin-top: 0.4rem;
+    list-style: none;
+    color: hsl(204, 43%, 93%);
+    font-size: 10px;
+    line-height: 1.1;
+}
+
+@media screen  and (min-width: 375px) {
+    .bottom{
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .subscribe{
+        width: 50%;
+        height: 100%;
+        border-radius: 0 0 0 10px;
+        padding-top: 2rem;
+    }
+
+    .subscribe h4{
+        margin-top: 0.7rem;
+        font-size: 9px;
+    }
+    .subscribe p{
+        margin-top: 0.7rem;
+        font-size: 8px;
+       
+        color: hsl(204, 43%, 93%);
+        margin-bottom: 0.9rem;     
+    }
+    .price{
+        flex-direction: column;
+    }
+    .price h5{
+        margin-left: 0;
+        margin-top: 0.4rem;
+        color: hsl(204, 43%, 93%);
+        font-size: 10px;
+    }
+
+    .whyus{
+        width: 50%;
+        height: 100%;
+        border-radius: 0 0 10px 0;
+        padding-top: 2rem;
+    }
+    li{
+        font-size: 8px;
+        padding: 0.2rem;
+    }
+    button:hover{
+        color: hsl(71, 73%, 54%);
+        background-color: white;
+        box-shadow: 0px 1px 5px 1px rgba(192,223,52,0.75);
+-webkit-box-shadow: 0px 1px 5px 1px rgba(192,223,52,0.75);
+-moz-box-shadow: 0px 1px 5px 1px rgba(192,223,52,0.75);
+        }
+}
+@media screen  and (min-width: 900px) {
+    body{
+        height: 100vh;
+        width: 80%;
+    }
+    .top{
+        border-radius: 10px 10px 0 0;
+        background-color: white;
+        padding: 2rem;
+        height: 40%;
+    }
+    
+    .top h2{
+        color: hsl(179, 62%, 43%);
+        margin-bottom: 2.5rem;
+        margin-top: 1.5rem;
+        font-weight: 700;
+        font-size: 22px;
+    }
+    
+    .top h4{
+    color: hsl(71, 73%, 54%);
+    font-weight: 600;
+    margin-bottom: 2.5rem;
+    font-size: 18px;
+    }
+    
+    .top p{
+        color:  hsl(218, 22%, 67%);
+        font-size: 14px;
+    }
+      .bottom{
+        flex-direction: row;
+        width: 100%;
+        
+    }
+
+    .subscribe{
+        width: 50%;
+        height: 100%;
+        border-radius: 0 0 0 10px;
+        padding-top: 2rem;
+    }
+
+    .subscribe h4{
+        margin-top: 0.7rem;
+        font-size: 18px;
+    }
+    .subscribe p{
+        margin-top: 0.7rem;
+        font-size: 18px;
+       
+        color: hsl(204, 43%, 93%);
+        margin-bottom: 2rem;     
+    }
+    .price{
+        flex-direction: row;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+    }
+
+    .price h2{
+        font-size: 36px;
+        margin-bottom: 0.4rem;
+    }
+    .price h5{
+        margin-left: 1.5rem;
+        margin-top: 0.7rem;
+        color: hsl(204, 43%, 93%);
+        font-size: 14px;
+    }
+
+    .whyus{
+        width: 50%;
+        height: 100%;
+        border-radius: 0 0 10px 0;
+        padding-top: 2rem;
+    }
+    li{
+        font-size: 8px;
+        padding: 0.2rem;
+    }
+    .whyus h3{
+        margin-top: 0.7rem;
+        color: white;
+        font-size: 20px;
+        margin-bottom: 2rem;
+    }
+    li{
+        margin-top: 0.4rem;
+        list-style: none;
+        color: hsl(204, 43%, 93%);
+        font-size: 16px;
+        line-height: 1.2;
+    }
+    button{
+        height: 2.5rem;
+        font-size: 18px;
+        width: 50%;
+        margin-top: 2rem;
+    }
+    button:hover{
+        color: hsl(71, 73%, 54%);
+        background-color: white;
+        box-shadow: 0px 1px 5px 1px rgba(192,223,52,0.75);
+-webkit-box-shadow: 0px 1px 5px 1px rgba(192,223,52,0.75);
+-moz-box-shadow: 0px 1px 5px 1px rgba(192,223,52,0.75);
+        }
+}
